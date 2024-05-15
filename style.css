@@ -1,0 +1,45 @@
+@import url('https://fonts.cdnfonts.com/css/satoshi');
+:root{
+  --salmon:#EF9D71;
+  --dsalmon:#000000;
+  --cyan:#aedee0;
+  --dcyan: #2f4747;
+  --white:#fff;
+  --black:#000;
+  --skin:#F5F19C;
+  --purple:#E9BBFF;
+}
+*::selection{
+    background-color: #EF9D71;
+}
+body[theme="black"] {
+  background: #000;
+}
+body[theme="black"] .section {
+  color: white;
+}
+body[theme="cyan"] {
+  background: var(--cyan);
+}
+body[theme="cyan"] .section {
+  color: black;
+}
+body[theme="salmon"] {
+  background: var(--salmon);
+}
+body[theme="salmon"] .section {
+  color: var(--dsalmon);
+}
+body[theme="white"] {
+  background: #fff;
+}
+body[theme="white"] .section {
+  color: black;
+}
+body{
+  transition: background-color ease-out .5s;
+  scroll-behavior: smooth;
+}
+.herovideo{
+  clip-path: circle(var(--clip) at 50% 50%);
+}
